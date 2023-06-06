@@ -1,0 +1,75 @@
+/**
+ * Performs a specific task with clean and readable code.
+ *
+ * @param param1 The first parameter of the method.
+ * @param param2 The second parameter of the method.
+ * @return The result of the task.
+ */
+public ReturnType performTask(ParameterType1 param1, ParameterType2 param2) {
+    // Perform input validation
+    if (param1 == null || param2 == null) {
+        throw new IllegalArgumentException("Parameters cannot be null.");
+    }
+    
+    // Initialize variables
+    ReturnType result = initializeResult();
+    int counter = 0;
+    
+    // Iterate over a collection or perform a loop
+    for (ElementType element : collection) {
+        if (isConditionMet(element)) {
+            // Perform the task on the element
+            result = performSubTask(result, element, param1, param2);
+            
+            // Increment counter
+            counter++;
+        }
+    }
+    
+    // Log the number of iterations
+    logger.info("Performed task on {} elements.", counter);
+    
+    // Return the final result
+    return result;
+}
+
+/**
+ * Initializes and returns the initial result value.
+ *
+ * @return The initial result value.
+ */
+private ReturnType initializeResult() {
+    // Perform initialization logic
+    ReturnType result = /* Initialize the result */;
+    
+    // Return the initialized result
+    return result;
+}
+
+/**
+ * Checks if a specific condition is met for the given element.
+ *
+ * @param element The element to check the condition for.
+ * @return True if the condition is met, false otherwise.
+ */
+private boolean isConditionMet(ElementType element) {
+    // Perform the condition check and return the result
+    return /* Condition check */;
+}
+
+/**
+ * Performs a sub-task on the given element and updates the result.
+ *
+ * @param result The current result.
+ * @param element The element to perform the sub-task on.
+ * @param param1 The first parameter.
+ * @param param2 The second parameter.
+ * @return The updated result.
+ */
+private ReturnType performSubTask(ReturnType result, ElementType element, ParameterType1 param1, ParameterType2 param2) {
+    // Perform the sub-task logic and update the result
+    // ...
+    
+    // Return the updated result
+    return result;
+}
